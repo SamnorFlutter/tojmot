@@ -1,0 +1,13 @@
+{
+  "name": "tojmot",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "test": "npm run test -w @tojmot/engine",
+    "dev": "npm run dev -w @tojmot/web",
+    "build": "npm run build -w @tojmot/web"
+  }
+}

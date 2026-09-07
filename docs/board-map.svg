@@ -1,0 +1,250 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="716" viewBox="0 0 620 716" font-family="Arial, sans-serif">
+<rect width="620" height="716" fill="#fbf7ee"/>
+<polygon points="102,454 134,486 102,518 70,486" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="102" y="509" font-size="8" fill="#8a7a5a" text-anchor="middle">A5</text>
+<polygon points="102,390 134,422 102,454 70,422" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="102" y="445" font-size="8" fill="#8a7a5a" text-anchor="middle">A7</text>
+<polygon points="102,326 134,358 102,390 70,358" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="102" y="381" font-size="8" fill="#8a7a5a" text-anchor="middle">A9</text>
+<polygon points="102,262 134,294 102,326 70,294" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="102" y="317" font-size="8" fill="#8a7a5a" text-anchor="middle">A11</text>
+<polygon points="102,198 134,230 102,262 70,230" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="102" y="253" font-size="8" fill="#8a7a5a" text-anchor="middle">A13</text>
+<polygon points="134,486 166,518 134,550 102,518" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="134" y="541" font-size="8" fill="#bdbdbd" text-anchor="middle">B4</text>
+<polygon points="134,422 166,454 134,486 102,454" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="134" y="477" font-size="8" fill="#bdbdbd" text-anchor="middle">B6</text>
+<polygon points="134,358 166,390 134,422 102,390" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="134" y="413" font-size="8" fill="#bdbdbd" text-anchor="middle">B8</text>
+<polygon points="134,294 166,326 134,358 102,326" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="134" y="349" font-size="8" fill="#bdbdbd" text-anchor="middle">B10</text>
+<polygon points="134,230 166,262 134,294 102,262" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="134" y="285" font-size="8" fill="#bdbdbd" text-anchor="middle">B12</text>
+<polygon points="134,166 166,198 134,230 102,198" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="134" y="221" font-size="8" fill="#bdbdbd" text-anchor="middle">B14</text>
+<polygon points="166,454 198,486 166,518 134,486" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="166" y="509" font-size="8" fill="#8a7a5a" text-anchor="middle">C5</text>
+<polygon points="166,390 198,422 166,454 134,422" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="166" y="445" font-size="8" fill="#8a7a5a" text-anchor="middle">C7</text>
+<polygon points="166,326 198,358 166,390 134,358" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="166" y="381" font-size="8" fill="#8a7a5a" text-anchor="middle">C9</text>
+<polygon points="166,262 198,294 166,326 134,294" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="166" y="317" font-size="8" fill="#8a7a5a" text-anchor="middle">C11</text>
+<polygon points="166,198 198,230 166,262 134,230" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="166" y="253" font-size="8" fill="#8a7a5a" text-anchor="middle">C13</text>
+<polygon points="198,486 230,518 198,550 166,518" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="198" y="541" font-size="8" fill="#bdbdbd" text-anchor="middle">D4</text>
+<polygon points="198,422 230,454 198,486 166,454" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="198" y="477" font-size="8" fill="#bdbdbd" text-anchor="middle">D6</text>
+<polygon points="198,358 230,390 198,422 166,390" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="198" y="413" font-size="8" fill="#bdbdbd" text-anchor="middle">D8</text>
+<polygon points="198,294 230,326 198,358 166,326" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="198" y="349" font-size="8" fill="#bdbdbd" text-anchor="middle">D10</text>
+<polygon points="198,230 230,262 198,294 166,262" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="198" y="285" font-size="8" fill="#bdbdbd" text-anchor="middle">D12</text>
+<polygon points="198,166 230,198 198,230 166,198" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="198" y="221" font-size="8" fill="#bdbdbd" text-anchor="middle">D14</text>
+<polygon points="230,518 262,550 230,582 198,550" fill="#ffe9a8" stroke="#8a7a5a" stroke-width="1"/>
+<text x="230" y="573" font-size="8" fill="#8a7a5a" text-anchor="middle">E3</text>
+<polygon points="230,454 262,486 230,518 198,486" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="230" y="509" font-size="8" fill="#8a7a5a" text-anchor="middle">E5</text>
+<polygon points="230,390 262,422 230,454 198,422" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="230" y="445" font-size="8" fill="#8a7a5a" text-anchor="middle">E7</text>
+<polygon points="230,326 262,358 230,390 198,358" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="230" y="381" font-size="8" fill="#8a7a5a" text-anchor="middle">E9</text>
+<polygon points="230,262 262,294 230,326 198,294" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="230" y="317" font-size="8" fill="#8a7a5a" text-anchor="middle">E11</text>
+<polygon points="230,198 262,230 230,262 198,230" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="230" y="253" font-size="8" fill="#8a7a5a" text-anchor="middle">E13</text>
+<polygon points="230,134 262,166 230,198 198,166" fill="#ffe9a8" stroke="#8a7a5a" stroke-width="1"/>
+<text x="230" y="189" font-size="8" fill="#8a7a5a" text-anchor="middle">E15</text>
+<polygon points="262,550 294,582 262,614 230,582" fill="#ffe9a8" stroke="#8a7a5a" stroke-width="1"/>
+<text x="262" y="605" font-size="8" fill="#8a7a5a" text-anchor="middle">F2</text>
+<polygon points="262,486 294,518 262,550 230,518" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="262" y="541" font-size="8" fill="#bdbdbd" text-anchor="middle">F4</text>
+<polygon points="262,422 294,454 262,486 230,454" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="262" y="477" font-size="8" fill="#bdbdbd" text-anchor="middle">F6</text>
+<polygon points="262,358 294,390 262,422 230,390" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="262" y="413" font-size="8" fill="#bdbdbd" text-anchor="middle">F8</text>
+<polygon points="262,294 294,326 262,358 230,326" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="262" y="349" font-size="8" fill="#bdbdbd" text-anchor="middle">F10</text>
+<polygon points="262,230 294,262 262,294 230,262" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="262" y="285" font-size="8" fill="#bdbdbd" text-anchor="middle">F12</text>
+<polygon points="262,166 294,198 262,230 230,198" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="262" y="221" font-size="8" fill="#bdbdbd" text-anchor="middle">F14</text>
+<polygon points="262,102 294,134 262,166 230,134" fill="#ffe9a8" stroke="#8a7a5a" stroke-width="1"/>
+<text x="262" y="157" font-size="8" fill="#8a7a5a" text-anchor="middle">F16</text>
+<polygon points="294,582 326,614 294,646 262,614" fill="#ffe9a8" stroke="#8a7a5a" stroke-width="1"/>
+<text x="294" y="637" font-size="8" fill="#8a7a5a" text-anchor="middle">G1</text>
+<polygon points="294,518 326,550 294,582 262,550" fill="#ffe9a8" stroke="#8a7a5a" stroke-width="1"/>
+<text x="294" y="573" font-size="8" fill="#8a7a5a" text-anchor="middle">G3</text>
+<polygon points="294,454 326,486 294,518 262,486" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="294" y="509" font-size="8" fill="#8a7a5a" text-anchor="middle">G5</text>
+<polygon points="294,390 326,422 294,454 262,422" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="294" y="445" font-size="8" fill="#8a7a5a" text-anchor="middle">G7</text>
+<polygon points="294,326 326,358 294,390 262,358" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="294" y="381" font-size="8" fill="#8a7a5a" text-anchor="middle">G9</text>
+<polygon points="294,262 326,294 294,326 262,294" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="294" y="317" font-size="8" fill="#8a7a5a" text-anchor="middle">G11</text>
+<polygon points="294,198 326,230 294,262 262,230" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="294" y="253" font-size="8" fill="#8a7a5a" text-anchor="middle">G13</text>
+<polygon points="294,134 326,166 294,198 262,166" fill="#ffe9a8" stroke="#8a7a5a" stroke-width="1"/>
+<text x="294" y="189" font-size="8" fill="#8a7a5a" text-anchor="middle">G15</text>
+<polygon points="294,70 326,102 294,134 262,102" fill="#ffe9a8" stroke="#8a7a5a" stroke-width="1"/>
+<text x="294" y="125" font-size="8" fill="#8a7a5a" text-anchor="middle">G17</text>
+<polygon points="326,550 358,582 326,614 294,582" fill="#ffe9a8" stroke="#8a7a5a" stroke-width="1"/>
+<text x="326" y="605" font-size="8" fill="#8a7a5a" text-anchor="middle">H2</text>
+<polygon points="326,486 358,518 326,550 294,518" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="326" y="541" font-size="8" fill="#bdbdbd" text-anchor="middle">H4</text>
+<polygon points="326,422 358,454 326,486 294,454" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="326" y="477" font-size="8" fill="#bdbdbd" text-anchor="middle">H6</text>
+<polygon points="326,358 358,390 326,422 294,390" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="326" y="413" font-size="8" fill="#bdbdbd" text-anchor="middle">H8</text>
+<polygon points="326,294 358,326 326,358 294,326" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="326" y="349" font-size="8" fill="#bdbdbd" text-anchor="middle">H10</text>
+<polygon points="326,230 358,262 326,294 294,262" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="326" y="285" font-size="8" fill="#bdbdbd" text-anchor="middle">H12</text>
+<polygon points="326,166 358,198 326,230 294,198" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="326" y="221" font-size="8" fill="#bdbdbd" text-anchor="middle">H14</text>
+<polygon points="326,102 358,134 326,166 294,134" fill="#ffe9a8" stroke="#8a7a5a" stroke-width="1"/>
+<text x="326" y="157" font-size="8" fill="#8a7a5a" text-anchor="middle">H16</text>
+<polygon points="358,518 390,550 358,582 326,550" fill="#ffe9a8" stroke="#8a7a5a" stroke-width="1"/>
+<text x="358" y="573" font-size="8" fill="#8a7a5a" text-anchor="middle">I3</text>
+<polygon points="358,454 390,486 358,518 326,486" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="358" y="509" font-size="8" fill="#8a7a5a" text-anchor="middle">I5</text>
+<polygon points="358,390 390,422 358,454 326,422" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="358" y="445" font-size="8" fill="#8a7a5a" text-anchor="middle">I7</text>
+<polygon points="358,326 390,358 358,390 326,358" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="358" y="381" font-size="8" fill="#8a7a5a" text-anchor="middle">I9</text>
+<polygon points="358,262 390,294 358,326 326,294" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="358" y="317" font-size="8" fill="#8a7a5a" text-anchor="middle">I11</text>
+<polygon points="358,198 390,230 358,262 326,230" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="358" y="253" font-size="8" fill="#8a7a5a" text-anchor="middle">I13</text>
+<polygon points="358,134 390,166 358,198 326,166" fill="#ffe9a8" stroke="#8a7a5a" stroke-width="1"/>
+<text x="358" y="189" font-size="8" fill="#8a7a5a" text-anchor="middle">I15</text>
+<polygon points="390,486 422,518 390,550 358,518" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="390" y="541" font-size="8" fill="#bdbdbd" text-anchor="middle">J4</text>
+<polygon points="390,422 422,454 390,486 358,454" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="390" y="477" font-size="8" fill="#bdbdbd" text-anchor="middle">J6</text>
+<polygon points="390,358 422,390 390,422 358,390" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="390" y="413" font-size="8" fill="#bdbdbd" text-anchor="middle">J8</text>
+<polygon points="390,294 422,326 390,358 358,326" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="390" y="349" font-size="8" fill="#bdbdbd" text-anchor="middle">J10</text>
+<polygon points="390,230 422,262 390,294 358,262" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="390" y="285" font-size="8" fill="#bdbdbd" text-anchor="middle">J12</text>
+<polygon points="390,166 422,198 390,230 358,198" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="390" y="221" font-size="8" fill="#bdbdbd" text-anchor="middle">J14</text>
+<polygon points="422,454 454,486 422,518 390,486" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="422" y="509" font-size="8" fill="#8a7a5a" text-anchor="middle">K5</text>
+<polygon points="422,390 454,422 422,454 390,422" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="422" y="445" font-size="8" fill="#8a7a5a" text-anchor="middle">K7</text>
+<polygon points="422,326 454,358 422,390 390,358" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="422" y="381" font-size="8" fill="#8a7a5a" text-anchor="middle">K9</text>
+<polygon points="422,262 454,294 422,326 390,294" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="422" y="317" font-size="8" fill="#8a7a5a" text-anchor="middle">K11</text>
+<polygon points="422,198 454,230 422,262 390,230" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="422" y="253" font-size="8" fill="#8a7a5a" text-anchor="middle">K13</text>
+<polygon points="454,486 486,518 454,550 422,518" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="454" y="541" font-size="8" fill="#bdbdbd" text-anchor="middle">L4</text>
+<polygon points="454,422 486,454 454,486 422,454" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="454" y="477" font-size="8" fill="#bdbdbd" text-anchor="middle">L6</text>
+<polygon points="454,358 486,390 454,422 422,390" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="454" y="413" font-size="8" fill="#bdbdbd" text-anchor="middle">L8</text>
+<polygon points="454,294 486,326 454,358 422,326" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="454" y="349" font-size="8" fill="#bdbdbd" text-anchor="middle">L10</text>
+<polygon points="454,230 486,262 454,294 422,262" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="454" y="285" font-size="8" fill="#bdbdbd" text-anchor="middle">L12</text>
+<polygon points="454,166 486,198 454,230 422,198" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="454" y="221" font-size="8" fill="#bdbdbd" text-anchor="middle">L14</text>
+<polygon points="486,454 518,486 486,518 454,486" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="486" y="509" font-size="8" fill="#8a7a5a" text-anchor="middle">M5</text>
+<polygon points="486,390 518,422 486,454 454,422" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="486" y="445" font-size="8" fill="#8a7a5a" text-anchor="middle">M7</text>
+<polygon points="486,326 518,358 486,390 454,358" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="486" y="381" font-size="8" fill="#8a7a5a" text-anchor="middle">M9</text>
+<polygon points="486,262 518,294 486,326 454,294" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="486" y="317" font-size="8" fill="#8a7a5a" text-anchor="middle">M11</text>
+<polygon points="486,198 518,230 486,262 454,230" fill="#f7f2e7" stroke="#8a7a5a" stroke-width="1"/>
+<text x="486" y="253" font-size="8" fill="#8a7a5a" text-anchor="middle">M13</text>
+<polygon points="518,486 550,518 518,550 486,518" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="518" y="541" font-size="8" fill="#bdbdbd" text-anchor="middle">N4</text>
+<polygon points="518,422 550,454 518,486 486,454" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="518" y="477" font-size="8" fill="#bdbdbd" text-anchor="middle">N6</text>
+<polygon points="518,358 550,390 518,422 486,390" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="518" y="413" font-size="8" fill="#bdbdbd" text-anchor="middle">N8</text>
+<polygon points="518,294 550,326 518,358 486,326" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="518" y="349" font-size="8" fill="#bdbdbd" text-anchor="middle">N10</text>
+<polygon points="518,230 550,262 518,294 486,262" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="518" y="285" font-size="8" fill="#bdbdbd" text-anchor="middle">N12</text>
+<polygon points="518,166 550,198 518,230 486,198" fill="#4b4b4b" stroke="#8a7a5a" stroke-width="1"/>
+<text x="518" y="221" font-size="8" fill="#bdbdbd" text-anchor="middle">N14</text>
+<text x="102" y="686" font-size="15" font-weight="bold" fill="#5a4a2a" text-anchor="middle">A</text>
+<text x="134" y="686" font-size="15" font-weight="bold" fill="#5a4a2a" text-anchor="middle">B</text>
+<text x="166" y="686" font-size="15" font-weight="bold" fill="#5a4a2a" text-anchor="middle">C</text>
+<text x="198" y="686" font-size="15" font-weight="bold" fill="#5a4a2a" text-anchor="middle">D</text>
+<text x="230" y="686" font-size="15" font-weight="bold" fill="#5a4a2a" text-anchor="middle">E</text>
+<text x="262" y="686" font-size="15" font-weight="bold" fill="#5a4a2a" text-anchor="middle">F</text>
+<text x="294" y="686" font-size="15" font-weight="bold" fill="#5a4a2a" text-anchor="middle">G</text>
+<text x="326" y="686" font-size="15" font-weight="bold" fill="#5a4a2a" text-anchor="middle">H</text>
+<text x="358" y="686" font-size="15" font-weight="bold" fill="#5a4a2a" text-anchor="middle">I</text>
+<text x="390" y="686" font-size="15" font-weight="bold" fill="#5a4a2a" text-anchor="middle">J</text>
+<text x="422" y="686" font-size="15" font-weight="bold" fill="#5a4a2a" text-anchor="middle">K</text>
+<text x="454" y="686" font-size="15" font-weight="bold" fill="#5a4a2a" text-anchor="middle">L</text>
+<text x="486" y="686" font-size="15" font-weight="bold" fill="#5a4a2a" text-anchor="middle">M</text>
+<text x="518" y="686" font-size="15" font-weight="bold" fill="#5a4a2a" text-anchor="middle">N</text>
+<text x="45" y="619" font-size="14" font-weight="bold" fill="#5a4a2a" text-anchor="middle">1</text>
+<text x="45" y="587" font-size="14" font-weight="bold" fill="#5a4a2a" text-anchor="middle">2</text>
+<text x="45" y="555" font-size="14" font-weight="bold" fill="#5a4a2a" text-anchor="middle">3</text>
+<text x="45" y="523" font-size="14" font-weight="bold" fill="#5a4a2a" text-anchor="middle">4</text>
+<text x="45" y="491" font-size="14" font-weight="bold" fill="#5a4a2a" text-anchor="middle">5</text>
+<text x="45" y="459" font-size="14" font-weight="bold" fill="#5a4a2a" text-anchor="middle">6</text>
+<text x="45" y="427" font-size="14" font-weight="bold" fill="#5a4a2a" text-anchor="middle">7</text>
+<text x="45" y="395" font-size="14" font-weight="bold" fill="#5a4a2a" text-anchor="middle">8</text>
+<text x="45" y="363" font-size="14" font-weight="bold" fill="#5a4a2a" text-anchor="middle">9</text>
+<text x="45" y="331" font-size="14" font-weight="bold" fill="#5a4a2a" text-anchor="middle">10</text>
+<text x="45" y="299" font-size="14" font-weight="bold" fill="#5a4a2a" text-anchor="middle">11</text>
+<text x="45" y="267" font-size="14" font-weight="bold" fill="#5a4a2a" text-anchor="middle">12</text>
+<text x="45" y="235" font-size="14" font-weight="bold" fill="#5a4a2a" text-anchor="middle">13</text>
+<text x="45" y="203" font-size="14" font-weight="bold" fill="#5a4a2a" text-anchor="middle">14</text>
+<text x="45" y="171" font-size="14" font-weight="bold" fill="#5a4a2a" text-anchor="middle">15</text>
+<text x="45" y="139" font-size="14" font-weight="bold" fill="#5a4a2a" text-anchor="middle">16</text>
+<text x="45" y="107" font-size="14" font-weight="bold" fill="#5a4a2a" text-anchor="middle">17</text>
+<circle cx="294" cy="614" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="294" y="620" font-size="16" font-weight="bold" fill="#1f3a93" text-anchor="middle">1</text>
+<circle cx="230" cy="550" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="230" y="556" font-size="16" font-weight="bold" fill="#1f3a93" text-anchor="middle">X</text>
+<circle cx="294" cy="550" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="294" y="556" font-size="16" font-weight="bold" fill="#1f3a93" text-anchor="middle">7</text>
+<circle cx="358" cy="550" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="358" y="556" font-size="16" font-weight="bold" fill="#1f3a93" text-anchor="middle">X</text>
+<circle cx="134" cy="518" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="134" y="524" font-size="16" font-weight="bold" fill="#1f3a93" text-anchor="middle">2</text>
+<circle cx="198" cy="518" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="198" y="524" font-size="16" font-weight="bold" fill="#1f3a93" text-anchor="middle">5</text>
+<circle cx="262" cy="518" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="262" y="524" font-size="16" font-weight="bold" fill="#1f3a93" text-anchor="middle">8</text>
+<circle cx="326" cy="518" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="326" y="524" font-size="16" font-weight="bold" fill="#1f3a93" text-anchor="middle">9</text>
+<circle cx="390" cy="518" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="390" y="524" font-size="16" font-weight="bold" fill="#1f3a93" text-anchor="middle">6</text>
+<circle cx="454" cy="518" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="454" y="524" font-size="16" font-weight="bold" fill="#1f3a93" text-anchor="middle">4</text>
+<circle cx="518" cy="518" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="518" y="524" font-size="16" font-weight="bold" fill="#1f3a93" text-anchor="middle">3</text>
+<circle cx="102" cy="486" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="102" y="492" font-size="16" font-weight="bold" fill="#1f3a93" text-anchor="middle">II</text>
+<circle cx="166" cy="486" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="166" y="492" font-size="16" font-weight="bold" fill="#1f3a93" text-anchor="middle">V</text>
+<circle cx="230" cy="486" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="230" y="492" font-size="12" font-weight="bold" fill="#1f3a93" text-anchor="middle">VIII</text>
+<circle cx="294" cy="486" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="294" y="492" font-size="16" font-weight="bold" fill="#1f3a93" text-anchor="middle">IX</text>
+<circle cx="358" cy="486" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="358" y="492" font-size="16" font-weight="bold" fill="#1f3a93" text-anchor="middle">VI</text>
+<circle cx="422" cy="486" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="422" y="492" font-size="16" font-weight="bold" fill="#1f3a93" text-anchor="middle">IV</text>
+<circle cx="486" cy="486" r="19.84" fill="#ffffff" stroke="#1f3a93" stroke-width="2.5"/><text x="486" y="492" font-size="12" font-weight="bold" fill="#1f3a93" text-anchor="middle">III</text>
+<circle cx="294" cy="102" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="294" y="108" font-size="16" font-weight="bold" fill="#ffd966" text-anchor="middle">1</text>
+<circle cx="230" cy="166" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="230" y="172" font-size="16" font-weight="bold" fill="#ffd966" text-anchor="middle">X</text>
+<circle cx="294" cy="166" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="294" y="172" font-size="16" font-weight="bold" fill="#ffd966" text-anchor="middle">7</text>
+<circle cx="358" cy="166" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="358" y="172" font-size="16" font-weight="bold" fill="#ffd966" text-anchor="middle">X</text>
+<circle cx="518" cy="198" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="518" y="204" font-size="16" font-weight="bold" fill="#ffd966" text-anchor="middle">2</text>
+<circle cx="454" cy="198" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="454" y="204" font-size="16" font-weight="bold" fill="#ffd966" text-anchor="middle">5</text>
+<circle cx="390" cy="198" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="390" y="204" font-size="16" font-weight="bold" fill="#ffd966" text-anchor="middle">8</text>
+<circle cx="326" cy="198" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="326" y="204" font-size="16" font-weight="bold" fill="#ffd966" text-anchor="middle">9</text>
+<circle cx="262" cy="198" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="262" y="204" font-size="16" font-weight="bold" fill="#ffd966" text-anchor="middle">6</text>
+<circle cx="198" cy="198" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="198" y="204" font-size="16" font-weight="bold" fill="#ffd966" text-anchor="middle">4</text>
+<circle cx="134" cy="198" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="134" y="204" font-size="16" font-weight="bold" fill="#ffd966" text-anchor="middle">3</text>
+<circle cx="486" cy="230" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="486" y="236" font-size="16" font-weight="bold" fill="#ffd966" text-anchor="middle">II</text>
+<circle cx="422" cy="230" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="422" y="236" font-size="16" font-weight="bold" fill="#ffd966" text-anchor="middle">V</text>
+<circle cx="358" cy="230" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="358" y="236" font-size="12" font-weight="bold" fill="#ffd966" text-anchor="middle">VIII</text>
+<circle cx="294" cy="230" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="294" y="236" font-size="16" font-weight="bold" fill="#ffd966" text-anchor="middle">IX</text>
+<circle cx="230" cy="230" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="230" y="236" font-size="16" font-weight="bold" fill="#ffd966" text-anchor="middle">VI</text>
+<circle cx="166" cy="230" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="166" y="236" font-size="16" font-weight="bold" fill="#ffd966" text-anchor="middle">IV</text>
+<circle cx="102" cy="230" r="19.84" fill="#2b2b2b" stroke="#c9a227" stroke-width="2.5"/><text x="102" y="236" font-size="12" font-weight="bold" fill="#ffd966" text-anchor="middle">III</text>
+<text x="310.0" y="28" font-size="18" font-weight="bold" fill="#3a2f14" text-anchor="middle">ТОЖМОТ — карта доски (89 клеток) и начальная расстановка</text>
+<text x="310.0" y="48" font-size="12" fill="#6a5a3a" text-anchor="middle">Жёлтые клетки — зона фигуры «1» (ряды 1–3 и 15–17). Белые ходят первыми (снизу). Вопрос автору: всё верно?</text>
+</svg>
