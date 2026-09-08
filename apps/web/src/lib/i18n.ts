@@ -94,7 +94,7 @@ export const DICT: Record<Lang, Dict> = {
     rules: 'Qoidalar',
     promotion: 'X qaysi donaga aylansin?',
     rulesIntro:
-      'Doska 89 katakdan iborat. Oq birinchi yuradi. Donalar o‘z yurish yo‘nalishidagi raqib donasini oladi. «1» donasi olinmaydi; raqib donalari «1» hududiga (sariq kataklar) kira olmaydi. «1» ga toj berilib, chiqib ketish iloji bo‘lmasa — mot.',
+      'Doska 89 katakdan iborat. Oq birinchi yuradi. Donalar o‘z yurish yo‘nalishidagi raqib donasini oladi. «1» donasi olinmaydi; «1» hududiga (sariq kataklar) hech qaysi dona kira olmaydi — raqibniki ham, o‘zingizniki ham. «1» ga toj berilib, chiqib ketish iloji bo‘lmasa — mot.',
     pieces: {
       '1': 'Toj — 8 tomonga 1 katak. Olinmaydi.',
       '7': 'Barcha 8 yo‘nalishda istalgan masofaga.',
@@ -105,8 +105,8 @@ export const DICT: Record<Lang, Dict> = {
       '5': 'Sakraydi: 1 to‘g‘ri + 1 yonga («Г»).',
       '6': 'Sakraydi: 2 to‘g‘ri + 1 yonga.',
       '3': 'Sakraydi: 1 to‘g‘ri + 1 diagonal.',
-      X: 'Oldinga diagonal 1 katak. Raqibning X katagida 2–9 dan istalgan donaga aylanadi.',
-      R: 'Rim raqamlari (II–IX): oldinga diagonal 1 katak. Raqibning X katagida o‘z raqamiga aylanadi.',
+      X: 'Oldinga diagonal 1 katak. Raqibning arab raqamlari qatorida 2–9 dan istalgan donaga aylanadi.',
+      R: 'Rim raqamlari (II–IX): oldinga diagonal 1 katak. Raqibning arab raqamlari qatoriga yetganda o‘sha katakdagi raqamga aylanadi.',
     },
     footer: 'Tojmot — muallif Monolit Toshmatov (2012). Raqamli versiya: beta.',
     themeDark: 'Qorong‘i rejim',
@@ -164,7 +164,7 @@ export const DICT: Record<Lang, Dict> = {
     rules: 'Правила',
     promotion: 'Во что превратить X?',
     rulesIntro:
-      'Доска — 89 клеток. Белые ходят первыми. Фигура бьёт фигуру противника, стоящую на пути её хода. Фигура «1» не бьётся; фигуры противника не могут входить в зону «1» (жёлтые клетки). Если «1» под тожем (шахом) и ходов нет — мат.',
+      'Доска — 89 клеток. Белые ходят первыми. Фигура бьёт фигуру противника, стоящую на пути её хода. Фигура «1» не бьётся; в зону «1» (жёлтые клетки) не может войти ни одна фигура — ни чужая, ни своя. Если «1» под тожем (шахом) и ходов нет — мат.',
     pieces: {
       '1': 'Тож — 1 клетка в любую из 8 сторон. Не бьётся.',
       '7': 'На любое расстояние по всем 8 направлениям.',
@@ -175,8 +175,8 @@ export const DICT: Record<Lang, Dict> = {
       '5': 'Прыжок: 1 по прямой + 1 вбок («Г»).',
       '6': 'Прыжок: 2 по прямой + 1 вбок.',
       '3': 'Прыжок: 1 по прямой + 1 по диагонали.',
-      X: '1 клетка по диагонали вперёд. На клетке чужого X превращается в любую фигуру 2–9.',
-      R: 'Римские (II–IX): 1 клетка по диагонали вперёд. На клетке чужого X превращаются в свою цифру.',
+      X: '1 клетка по диагонали вперёд. На ряду арабских цифр противника превращается в любую фигуру 2–9.',
+      R: 'Римские (II–IX): 1 клетка по диагонали вперёд. Дойдя до ряда арабских цифр противника, превращаются в цифру той клетки.',
     },
     footer: 'Тожмот — автор Манолит Тошматов (2012). Цифровая версия: бета.',
     themeDark: 'Тёмная тема',
@@ -234,7 +234,7 @@ export const DICT: Record<Lang, Dict> = {
     rules: 'Rules',
     promotion: 'Promote X to…',
     rulesIntro:
-      'The board has 89 cells. White moves first. A piece captures an enemy piece standing on its path. Piece 1 can never be captured; enemy pieces may not enter the zone of 1 (yellow cells). If 1 is in toj (check) and has no move — checkmate.',
+      'The board has 89 cells. White moves first. A piece captures an enemy piece standing on its path. Piece 1 can never be captured; no piece may enter the zone of 1 (yellow cells) — neither the enemy\'s nor your own. If 1 is in toj (check) and has no move — checkmate.',
     pieces: {
       '1': 'Toj — one step in any of 8 directions. Cannot be captured.',
       '7': 'Any distance in all 8 directions.',
@@ -245,8 +245,8 @@ export const DICT: Record<Lang, Dict> = {
       '5': 'Jump: 1 straight + 1 sideways (“Г”).',
       '6': 'Jump: 2 straight + 1 sideways.',
       '3': 'Jump: 1 straight + 1 diagonal.',
-      X: 'One diagonal step forward. On the enemy X cell it becomes any piece 2–9.',
-      R: 'Romans (II–IX): one diagonal step forward. On the enemy X cell they become their own number.',
+      X: 'One diagonal step forward. On the opponent\'s Arabic row it becomes any piece 2–9.',
+      R: 'Romans (II–IX): one diagonal step forward. Reaching the opponent\'s Arabic row they become the numeral of that cell.',
     },
     footer: 'Tojmot — created by Monolit Toshmatov (2012). Digital version: beta.',
     themeDark: 'Dark mode',

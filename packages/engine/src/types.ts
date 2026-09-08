@@ -55,6 +55,15 @@ export interface RulesConfig {
   romanBackward: boolean;
   /** Piece 1 may capture enemy pieces. */
   kingCaptures: boolean;
+  /**
+   * Where Roman pieces and X promote.
+   * 'arabicRow' — on the opponent's Arabic-numeral home row; the piece becomes the numeral
+   *               belonging to that cell (X may choose any numeral 2–9).
+   * 'xCells'    — on the opponent's two X start cells (literal reading of the printed rules).
+   */
+  promotion: 'arabicRow' | 'xCells';
+  /** Whether the owner's own pieces may enter their king's zone (the 1 itself always may). */
+  ownPiecesInZone: boolean;
   /** Draw after 50 moves (100 plies) without capture or Roman/X move. */
   fiftyMoveRule: boolean;
   /** Draw on threefold repetition. */
@@ -68,6 +77,8 @@ export const DEFAULT_RULES: RulesConfig = {
   xMove: 'roman',
   romanBackward: false,
   kingCaptures: true,
+  promotion: 'arabicRow',
+  ownPiecesInZone: false,
   fiftyMoveRule: true,
   threefoldRepetition: true,
 };

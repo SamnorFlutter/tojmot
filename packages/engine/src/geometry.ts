@@ -1,4 +1,4 @@
-import type { Cell, Color } from './types';
+import type { Cell, Color, PieceType } from './types';
 
 /**
  * Board geometry.
@@ -28,8 +28,12 @@ export interface CellInfo {
   shade: 'light' | 'dark';
   /** Which king's protected zone this cell belongs to, if any. */
   zone: Color | null;
-  /** Whether a piece of this colour promotes when landing here. */
-  promotionFor: Color | null;
+  /** Arabic piece a White pawn-like piece becomes here (row 14 — Black's Arabic row). */
+  promoW: PieceType | null;
+  /** Arabic piece a Black pawn-like piece becomes here (row 4 — White's Arabic row). */
+  promoB: PieceType | null;
+  /** Legacy variant: the X start cells, where that colour used to promote. */
+  xPromotionFor: Color | null;
 }
 
 const SPIKES: ReadonlyArray<readonly [number, number]> = [
@@ -37,13 +41,29 @@ const SPIKES: ReadonlyArray<readonly [number, number]> = [
   [5, 15], [7, 15], [9, 15], [6, 16], [8, 16], [7, 17],
 ];
 
-/** The 4-cell block marked on the physical board around each king's home cell. */
+/**
+ * The king's sanctuary: the king's own cell plus the three cells of its spike
+ * ("3 cells plus the 1"). No piece may enter it — not even the owner's own pieces;
+ * only that side's 1 may stand there.
+ */
 const WHITE_ZONE: ReadonlyArray<readonly [number, number]> = [[7, 1], [6, 2], [8, 2], [7, 3]];
 const BLACK_ZONE: ReadonlyArray<readonly [number, number]> = [[7, 17], [6, 16], [8, 16], [7, 15]];
 
-/** Start cells of the opponent's X pieces — where Romans and X promote. */
-const WHITE_PROMOTION: ReadonlyArray<readonly [number, number]> = [[5, 15], [9, 15]];
-const BLACK_PROMOTION: ReadonlyArray<readonly [number, number]> = [[5, 3], [9, 3]];
+/**
+ * The Arabic numerals' home rows. A Roman piece that reaches the opponent's Arabic row
+ * turns into the numeral belonging to that very cell (X may choose any numeral 2–9).
+ * Keys are the x coordinate; White's row is y = 4, Black's row is y = 14.
+ */
+const WHITE_ARABIC_ROW: Readonly<Record<number, PieceType>> = {
+  2: '2', 4: '5', 6: '8', 8: '9', 10: '6', 12: '4', 14: '3',
+};
+const BLACK_ARABIC_ROW: Readonly<Record<number, PieceType>> = {
+  14: '2', 12: '5', 10: '8', 8: '9', 6: '6', 4: '4', 2: '3',
+};
+
+/** Start cells of the opponent's X pieces (legacy promotion variant). */
+const WHITE_X_PROMOTION: ReadonlyArray<readonly [number, number]> = [[5, 15], [9, 15]];
+const BLACK_X_PROMOTION: ReadonlyArray<readonly [number, number]> = [[5, 3], [9, 3]];
 
 function has(list: ReadonlyArray<readonly [number, number]>, x: number, y: number): boolean {
   return list.some(([a, b]) => a === x && b === y);
@@ -58,7 +78,6 @@ export const CELLS: readonly CellInfo[] = (() => {
       const spike = has(SPIKES, x, y);
       if (!body && !spike) continue;
       const zone: Color | null = has(WHITE_ZONE, x, y) ? 'w' : has(BLACK_ZONE, x, y) ? 'b' : null;
-      const promotionFor: Color | null = has(WHITE_PROMOTION, x, y) ? 'w' : has(BLACK_PROMOTION, x, y) ? 'b' : null;
       out.push({
         index: out.length,
         x,
@@ -66,7 +85,9 @@ export const CELLS: readonly CellInfo[] = (() => {
         name: `${COLS[x - 1]}${y}`,
         shade: spike || y % 2 === 1 ? 'light' : 'dark',
         zone,
-        promotionFor,
+        promoW: y === 14 ? BLACK_ARABIC_ROW[x] ?? null : null,
+        promoB: y === 4 ? WHITE_ARABIC_ROW[x] ?? null : null,
+        xPromotionFor: has(WHITE_X_PROMOTION, x, y) ? 'w' : has(BLACK_X_PROMOTION, x, y) ? 'b' : null,
       });
     }
   }

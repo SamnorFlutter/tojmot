@@ -26,6 +26,8 @@ function checkGoal(def: LessonDef, before: GameState, after: GameState, m: Move)
       return cellName(m.to) === g.target && before.board[m.to] !== null;
     case 'promote':
       return m.promotion != null;
+    case 'promoteTo':
+      return m.promotion === g.piece;
     case 'mateIn1':
       return gameStatus(after).kind === 'checkmate';
     case 'check':

@@ -94,7 +94,12 @@ export function pseudoTargets(state: GameState, from: Cell, forAttack = false): 
     }
     if (!forAttack) {
       const zone = CELLS[to].zone;
-      if (zone && zone !== color) return false; // may not enter the enemy king's zone
+      if (zone) {
+        // The king's sanctuary: only that side's own 1 may stand there.
+        const isOwnKing = piece.type === '1' && piece.color === zone;
+        const allowedAsOwnPiece = rules.ownPiecesInZone && zone === color;
+        if (!isOwnKing && !allowedAsOwnPiece) return false;
+      }
     }
     return true;
   };
@@ -175,12 +180,33 @@ export function pseudoTargets(state: GameState, from: Cell, forAttack = false): 
 
   if (forAttack) return out.map((to) => ({ to }));
 
-  // Promotions on the opponent's X start cells
+  // Promotions
   const targets: Target[] = [];
+  const pawnLike = piece.type === 'X' || isRoman(piece.type);
   for (const to of out) {
-    if (CELLS[to].promotionFor === color && (piece.type === 'X' || isRoman(piece.type))) {
-      if (piece.type === 'X') for (const promotion of ARABIC_PROMOTIONS) targets.push({ to, promotion });
-      else targets.push({ to, promotion: ROMAN_TO_ARABIC[piece.type] });
+    const cell = CELLS[to];
+    let promotesHere = false;
+    let fixedType: PieceType | null = null;
+
+    if (pawnLike) {
+      if (rules.promotion === 'arabicRow') {
+        // Reaching the opponent's Arabic row: become the numeral of that very cell.
+        const t = color === 'w' ? cell.promoW : cell.promoB;
+        if (t) {
+          promotesHere = true;
+          fixedType = t;
+        }
+      } else if (cell.xPromotionFor === color) {
+        promotesHere = true;
+        fixedType = isRoman(piece.type) ? ROMAN_TO_ARABIC[piece.type] : null;
+      }
+    }
+
+    if (promotesHere && piece.type === 'X') {
+      // X is the wildcard: it may become any Arabic numeral except 1.
+      for (const promotion of ARABIC_PROMOTIONS) targets.push({ to, promotion });
+    } else if (promotesHere && fixedType) {
+      targets.push({ to, promotion: fixedType });
     } else {
       targets.push({ to });
     }

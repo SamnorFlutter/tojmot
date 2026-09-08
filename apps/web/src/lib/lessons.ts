@@ -11,6 +11,7 @@ export type Goal =
   | { type: 'check' }
   | { type: 'mateIn1' }
   | { type: 'promote' }
+  | { type: 'promoteTo'; piece: PieceType }
   | { type: 'safe'; piece: string }
   | { type: 'anyMove' };
 
@@ -72,9 +73,9 @@ export const LESSONS: LessonDef[] = [
     points: 10,
     title: { uz: 'Toj hududi', ru: 'Зона Тожа', en: 'The Toj zone' },
     text: {
-      uz: 'Sariq kataklar — Toj hududi. Raqib donalari bu hududga KIRA OLMAYDI, lekin uzoqdan hujum qilishi mumkin. Toj hududdan chiqishi ham mumkin: G3 dan G5 ga yuring.',
-      ru: 'Жёлтые клетки — зона Тожа. Фигуры противника НЕ МОГУТ входить в неё, но могут атаковать издалека. Тож может и выходить из зоны: сходите с G3 на G5.',
-      en: 'The yellow cells are the Toj zone. Enemy pieces CANNOT enter it, but they can attack from afar. The Toj may also leave the zone: move from G3 to G5.',
+      uz: 'Sariq kataklar — Toj hududi: 3 katak va Tojning o‘zi. Bu hududga HECH QAYSI dona kira olmaydi — raqibniki ham, o‘zingizniki ham. Faqat Tojning o‘zi u yerda yura oladi, uzoqdan esa unga hujum qilish mumkin. Toj hududdan chiqishi ham mumkin: G3 dan G5 ga yuring.',
+      ru: 'Жёлтые клетки — зона Тожа: 3 клетки и сам Тож. В неё НЕ МОЖЕТ войти ни одна фигура — ни чужая, ни своя. Там ходит только сам Тож, а атаковать его можно издалека. Тож может и выходить из зоны: сходите с G3 на G5.',
+      en: 'The yellow cells are the Toj zone: three cells plus the Toj itself. NO piece may enter it — neither the enemy\'s nor your own. Only the Toj moves there, though it can be attacked from afar. The Toj may also leave the zone: move from G3 to G5.',
     },
     setup: [['G3', '1', 'w'], ['G17', '1', 'b']],
     turn: 'w',
@@ -232,15 +233,15 @@ export const LESSONS: LessonDef[] = [
     points: 20,
     title: { uz: 'Aylanish', ru: 'Превращение', en: 'Promotion' },
     text: {
-      uz: 'Rim donasi raqibning X katagiga (E15 yoki I15) yetsa, o‘z raqamiga aylanadi: IX → 9. G15 ga kirib bo‘lmaydi — bu Toj hududi. IX ni E15 ga yurgizing!',
-      ru: 'Римская фигура, дойдя до клетки чужого X (E15 или I15), превращается в свою цифру: IX → 9. На G15 нельзя — это зона Тожа. Сходите IX на E15!',
-      en: 'A Roman reaching the enemy X cell (E15 or I15) becomes its number: IX → 9. G15 is off-limits — the Toj zone. Move your IX to E15!',
+      uz: 'Rim donasi raqibning arab raqamlari qatoriga (14-qator) yetsa, o‘sha katakdagi raqamga aylanadi: H14 ga borsa — 9, F14 ga borsa — 6. IX ni yurgizib ko‘ring!',
+      ru: 'Римская фигура, дойдя до ряда арабских цифр противника (14-й ряд), превращается в цифру ТОЙ клетки: на H14 — в 9, на F14 — в 6. Сходите фигурой IX!',
+      en: 'A Roman that reaches the opponent\'s Arabic row (row 14) becomes the numeral of THAT cell: 9 on H14, 6 on F14. Move your IX!',
     },
-    setup: [...K, ['F14', 'IX', 'w']],
+    setup: [...K, ['G13', 'IX', 'w']],
     turn: 'w',
     goal: { type: 'promote' },
-    hintFrom: 'F14',
-    marks: ['E15'],
+    hintFrom: 'G13',
+    marks: ['F14', 'H14'],
   },
   {
     id: 'xpiece',
@@ -248,15 +249,15 @@ export const LESSONS: LessonDef[] = [
     points: 20,
     title: { uz: 'X donasi', ru: 'Фигура X', en: 'The X piece' },
     text: {
-      uz: 'X ham rimliklar kabi yuradi, lekin raqibning X katagida 2–9 dan ISTALGAN donaga aylanadi. X ni I15 ga yurgizing va donani tanlang!',
-      ru: 'X ходит как римские, но на клетке чужого X превращается в ЛЮБУЮ фигуру 2–9. Сходите X на I15 и выберите фигуру!',
-      en: 'X moves like the Romans, but on the enemy X cell it becomes ANY piece 2–9. Move X to I15 and pick a piece!',
+      uz: 'X ham rimliklar kabi yuradi, lekin arab raqamlari qatoriga yetganda 2–9 dan ISTALGAN donaga aylanadi — katakdagi raqamga bog‘liq emas. X ni yurgizing va donani tanlang!',
+      ru: 'X ходит как римские, но, дойдя до ряда арабских цифр, превращается в ЛЮБУЮ фигуру 2–9 — не привязан к цифре клетки. Сходите X и выберите фигуру!',
+      en: 'X moves like the Romans, but on reaching the Arabic row it becomes ANY piece 2–9 — not tied to that cell\'s numeral. Move the X and pick a piece!',
     },
-    setup: [...K, ['J14', 'X', 'w']],
+    setup: [...K, ['G13', 'X', 'w']],
     turn: 'w',
     goal: { type: 'promote' },
-    hintFrom: 'J14',
-    marks: ['I15'],
+    hintFrom: 'G13',
+    marks: ['F14', 'H14'],
   },
   {
     id: 'check',
@@ -369,15 +370,15 @@ export const LESSONS: LessonDef[] = [
     points: 40,
     title: { uz: 'Kvest: yangi «7»', ru: 'Квест: новая «7»', en: 'Quest: a new 7' },
     text: {
-      uz: 'X ni raqibning X katagiga olib boring va eng kuchli donani tanlang — «7»!',
-      ru: 'Проведите X на клетку чужого X и выберите сильнейшую фигуру — «7»!',
-      en: 'Take your X to the enemy X cell and choose the strongest piece — the 7!',
+      uz: 'X ni raqibning arab raqamlari qatoriga olib boring va eng kuchli donani tanlang — «7»!',
+      ru: 'Проведите X до ряда арабских цифр противника и выберите сильнейшую фигуру — «7»!',
+      en: 'Take your X to the opponent\'s Arabic row and choose the strongest piece — the 7!',
     },
-    setup: [...K, ['H14', 'X', 'w']],
+    setup: [...K, ['I13', 'X', 'w']],
     turn: 'w',
-    goal: { type: 'promote' },
-    hintFrom: 'H14',
-    marks: ['I15'],
+    goal: { type: 'promoteTo', piece: '7' },
+    hintFrom: 'I13',
+    marks: ['H14', 'J14'],
   },
   {
     id: 'q-mate2',

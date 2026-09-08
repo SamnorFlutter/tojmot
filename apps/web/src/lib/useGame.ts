@@ -43,12 +43,20 @@ export function useGame() {
   );
 
   // Lazily create the search worker; fall back to the main thread if workers are unavailable.
+  // The worker is a prebuilt classic script (public/tojmot-ai.js) so that it also works
+  // from a static file host, where a bundler-emitted .ts asset would be rejected.
   const getWorker = useCallback((): Worker | null => {
     if (workerRef.current) return workerRef.current;
     if (typeof window === 'undefined' || typeof Worker === 'undefined') return null;
     try {
-      workerRef.current = new Worker(new URL('./ai.worker.ts', import.meta.url));
-      return workerRef.current;
+      const base = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+      const worker = new Worker(`${base}/tojmot-ai.js`);
+      worker.addEventListener('error', () => {
+        worker.terminate();
+        if (workerRef.current === worker) workerRef.current = null;
+      });
+      workerRef.current = worker;
+      return worker;
     } catch {
       return null;
     }
@@ -67,19 +75,37 @@ export function useGame() {
       setThinking(false);
       if (result.move) setState((s) => (s === state ? makeMove(s, result.move!) : s));
     };
+    let fallbackTimer = 0;
+    const runOnMainThread = () => {
+      fallbackTimer = window.setTimeout(() => apply(findBestMove(state, options)), 30);
+    };
+
     const worker = getWorker();
     if (worker) {
-      const onMessage = (e: MessageEvent<{ id: number; result: SearchResult }>) => {
+      const onMessage = (e: MessageEvent<{ id: number; result?: SearchResult }>) => {
         if (e.data.id !== id) return;
+        cleanup();
+        if (e.data.result) apply(e.data.result);
+        else runOnMainThread();
+      };
+      const onError = () => {
+        cleanup();
+        runOnMainThread();
+      };
+      const cleanup = () => {
         worker.removeEventListener('message', onMessage);
-        apply(e.data.result);
+        worker.removeEventListener('error', onError);
       };
       worker.addEventListener('message', onMessage);
+      worker.addEventListener('error', onError);
       worker.postMessage({ id, state, options });
-      return () => worker.removeEventListener('message', onMessage);
+      return () => {
+        cleanup();
+        if (fallbackTimer) window.clearTimeout(fallbackTimer);
+      };
     }
-    const timer = window.setTimeout(() => apply(findBestMove(state, options)), 30);
-    return () => window.clearTimeout(timer);
+    runOnMainThread();
+    return () => window.clearTimeout(fallbackTimer);
   }, [aiTurn, state, level, getWorker]);
 
   const play = useCallback((move: Move) => {
